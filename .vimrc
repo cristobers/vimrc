@@ -1,24 +1,33 @@
 set termguicolors
 set number
 set relativenumber
-
 set cursorline
 set cursorlineopt=number
 
 set hlsearch
-set nowrap
 set smartindent
 set so=99
 
 colorscheme spacecamp
-"hi CursorLine guibg=#222222 gui=none
 
 " this is for the relativenumber
 hi CursorLineNr guifg=yellow
 
 " this turns on spellchecker for LaTeX and markdown files.
 autocmd FileType latex,tex,md,markdown setlocal spell
+
+" magical binds
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+nnoremap j gj
+nnoremap k gk
+
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>0
+inoremap {;<CR> {<CR>};<ESC>0
 
 " these magical lines fix vim within tmux
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
