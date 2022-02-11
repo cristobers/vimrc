@@ -1,12 +1,16 @@
 set termguicolors
 set number
+set hidden
 set relativenumber
 set cursorline
 set cursorlineopt=number
-
 set hlsearch
+set incsearch
 set smartindent
+set smartcase
+
 set so=99
+set tabstop=4 softtabstop=4
 
 colorscheme spacecamp
 
@@ -22,7 +26,7 @@ nnoremap j gj
 nnoremap k gk
 
 inoremap " ""<left>
-inoremap ' ''<left>
+"inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
