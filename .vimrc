@@ -6,12 +6,13 @@ set cursorline
 set cursorlineopt=number
 set hlsearch
 set incsearch
-set nowrap
-"set smartindent
+set linebreak
+set breakindent
 set smartcase
 
 set so=99
-set tabstop=4 softtabstop=4
+set tabstop=4 
+set shiftwidth=4
 
 colorscheme spacecamp
 
