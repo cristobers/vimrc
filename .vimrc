@@ -1,5 +1,7 @@
 " the good stuff
 set termguicolors
+set ttyfast
+set autoread
 set number
 set hidden
 set relativenumber
@@ -9,6 +11,7 @@ set incsearch
 set linebreak
 set breakindent
 set smartcase
+set wildmenu " for the <TAB> menu in the command bar
 set expandtab " for having all the tab characters turn into space characters
 
 " making the tab length 4
