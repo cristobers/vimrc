@@ -40,3 +40,4 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 " big block cursor youre in insert mode
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
+autocmd VimLeave * :!printf "\e[6 q"
