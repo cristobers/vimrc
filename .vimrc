@@ -1,4 +1,5 @@
 " the good stuff
+syntax on
 set termguicolors
 set ttyfast
 set autoread
